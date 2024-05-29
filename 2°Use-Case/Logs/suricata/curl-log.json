@@ -1,0 +1,246 @@
+{
+    "timestamp": "2024-05-24T15:18:48.247184+0000",
+    "flow_id": 213847541097320,
+    "in_iface": "suricata-399f20",
+    "event_type": "alert",
+    "src_ip": "172.16.0.1",
+    "src_port": 55048,
+    "dest_ip": "172.16.0.0",
+    "dest_port": 80,
+    "proto": "TCP",
+    "pkt_src": "wire/pcap",
+    "tx_id": 0,
+    "alert": {
+        "action": "allowed",
+        "gid": 1,
+        "signature_id": 1000001,
+        "rev": 1,
+        "signature": "Detected curl/8.5.0 user-agent",
+        "category": "",
+        "severity": 3
+    },
+    "http": {
+        "hostname": "172.16.0.0",
+        "url": "/",
+        "http_user_agent": "curl/8.5.0",
+        "http_content_type": "application/octet-stream",
+        "http_method": "GET",
+        "protocol": "HTTP/1.1",
+        "status": 403,
+        "length": 9,
+        "http_response_body_printable": "Forbidden",
+        "http_response_body": "Rm9yYmlkZGVu"
+    },
+    "app_proto": "http",
+    "direction": "to_server",
+    "flow": {
+        "pkts_toserver": 4,
+        "pkts_toclient": 3,
+        "bytes_toserver": 361,
+        "bytes_toclient": 383,
+        "start": "2024-05-24T15:18:48.246398+0000",
+        "src_ip": "172.16.0.1",
+        "dest_ip": "172.16.0.0",
+        "src_port": 55048,
+        "dest_port": 80
+    },
+    "payload": "R0VUIC8gSFRUUC8xLjENCkhvc3Q6IDE3Mi4xNi4wLjANClVzZXItQWdlbnQ6IGN1cmwvOC41LjANCkFjY2VwdDogKi8qDQp0ZXN0MjogdmFsb3JlMg0KDQo=",
+    "payload_printable": "GET / HTTP/1.1\r\nHost: 172.16.0.0\r\nUser-Agent: curl/8.5.0\r\nAccept: */*\r\ntest2: valore2\r\n\r\n",
+    "stream": 1,
+    "packet": "Av4F2cx7Av543cqSCABFAAA0cItAAEAGchesEAABrBAAANcIAFAvCQfHKTSlAYAQAemAyQAAAQEICk3GuHTVNeQZ",
+    "packet_info": {
+        "linktype": 1
+    }
+}
+{
+    "timestamp": "2024-05-24T15:18:48.247184+0000",
+    "flow_id": 213847541097320,
+    "in_iface": "suricata-399f20",
+    "event_type": "http",
+    "src_ip": "172.16.0.1",
+    "src_port": 55048,
+    "dest_ip": "172.16.0.0",
+    "dest_port": 80,
+    "proto": "TCP",
+    "pkt_src": "wire/pcap",
+    "tx_id": 0,
+    "http": {
+        "hostname": "172.16.0.0",
+        "url": "/",
+        "http_user_agent": "curl/8.5.0",
+        "http_content_type": "application/octet-stream",
+        "http_method": "GET",
+        "protocol": "HTTP/1.1",
+        "status": 403,
+        "length": 9,
+        "request_headers": [
+            {
+                "name": "Host",
+                "value": "172.16.0.0"
+            },
+            {
+                "name": "User-Agent",
+                "value": "curl/8.5.0"
+            },
+            {
+                "name": "Accept",
+                "value": "*/*"
+            },
+            {
+                "name": "test2",
+                "value": "valore2"
+            }
+        ],
+        "response_headers": [
+            {
+                "name": "Server",
+                "value": "nginx/1.25.5"
+            },
+            {
+                "name": "Date",
+                "value": "Fri, 24 May 2024 15:18:48 GMT"
+            },
+            {
+                "name": "Content-Type",
+                "value": "application/octet-stream"
+            },
+            {
+                "name": "Content-Length",
+                "value": "9"
+            },
+            {
+                "name": "Connection",
+                "value": "keep-alive"
+            }
+        ]
+    }
+}
+{
+    "timestamp": "2024-05-24T15:18:48.247402+0000",
+    "flow_id": 213847541097320,
+    "in_iface": "suricata-399f20",
+    "event_type": "fileinfo",
+    "src_ip": "172.16.0.0",
+    "src_port": 80,
+    "dest_ip": "172.16.0.1",
+    "dest_port": 55048,
+    "proto": "TCP",
+    "pkt_src": "wire/pcap",
+    "http": {
+        "hostname": "172.16.0.0",
+        "url": "/",
+        "http_user_agent": "curl/8.5.0",
+        "http_content_type": "application/octet-stream",
+        "http_method": "GET",
+        "protocol": "HTTP/1.1",
+        "status": 403,
+        "length": 9
+    },
+    "app_proto": "http",
+    "fileinfo": {
+        "filename": "/",
+        "gaps": false,
+        "state": "CLOSED",
+        "stored": false,
+        "size": 9,
+        "tx_id": 0
+    }
+}
+{
+    "timestamp": "2024-05-24T15:18:50.527428+0000",
+    "flow_id": 213847541097320,
+    "in_iface": "suricata-399f20",
+    "event_type": "flow",
+    "src_ip": "172.16.0.1",
+    "src_port": 55048,
+    "dest_ip": "172.16.0.0",
+    "dest_port": 80,
+    "proto": "TCP",
+    "app_proto": "http",
+    "flow": {
+        "pkts_toserver": 6,
+        "pkts_toclient": 4,
+        "bytes_toserver": 493,
+        "bytes_toclient": 449,
+        "start": "2024-05-24T15:18:48.246398+0000",
+        "end": "2024-05-24T15:18:48.247496+0000",
+        "age": 0,
+        "state": "closed",
+        "reason": "shutdown",
+        "alerted": true
+    },
+    "tcp": {
+        "tcp_flags": "1b",
+        "tcp_flags_ts": "1b",
+        "tcp_flags_tc": "1b",
+        "syn": true,
+        "fin": true,
+        "psh": true,
+        "ack": true,
+        "state": "closed",
+        "ts_max_regions": 1,
+        "tc_max_regions": 1
+    }
+}
+{
+    "timestamp": "2024-05-24T15:18:50.527511+0000",
+    "flow_id": 238233970458499,
+    "in_iface": "suricata-399f20",
+    "event_type": "flow",
+    "src_ip": "172.16.0.1",
+    "dest_ip": "172.16.0.0",
+    "proto": "ICMP",
+    "icmp_type": 8,
+    "icmp_code": 0,
+    "response_icmp_type": 0,
+    "response_icmp_code": 0,
+    "flow": {
+        "pkts_toserver": 123,
+        "pkts_toclient": 123,
+        "bytes_toserver": 7134,
+        "bytes_toclient": 7134,
+        "start": "2024-05-24T15:18:24.186540+0000",
+        "end": "2024-05-24T15:18:50.099322+0000",
+        "age": 26,
+        "state": "established",
+        "reason": "shutdown",
+        "alerted": false
+    }
+}
+{
+    "timestamp": "2024-05-24T15:18:50.527528+0000",
+    "flow_id": 1848578792215662,
+    "in_iface": "suricata-399f20",
+    "event_type": "flow",
+    "src_ip": "172.16.0.1",
+    "src_port": 33050,
+    "dest_ip": "172.16.0.0",
+    "dest_port": 8080,
+    "proto": "TCP",
+    "app_proto": "http",
+    "flow": {
+        "pkts_toserver": 6,
+        "pkts_toclient": 4,
+        "bytes_toserver": 498,
+        "bytes_toclient": 488,
+        "start": "2024-05-24T15:18:46.561477+0000",
+        "end": "2024-05-24T15:18:46.564618+0000",
+        "age": 0,
+        "state": "closed",
+        "reason": "shutdown",
+        "alerted": true
+    },
+    "tcp": {
+        "tcp_flags": "1b",
+        "tcp_flags_ts": "1b",
+        "tcp_flags_tc": "1b",
+        "syn": true,
+        "fin": true,
+        "psh": true,
+        "ack": true,
+        "state": "closed",
+        "ts_max_regions": 1,
+        "tc_max_regions": 1
+    }
+}
+
