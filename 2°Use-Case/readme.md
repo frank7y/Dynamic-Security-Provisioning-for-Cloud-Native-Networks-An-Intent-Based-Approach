@@ -5,4 +5,4 @@ Then we also reported the logs of the nginx web server.
 The security event corresponsing to the logs shown for this use case is generated when the logs match the following pattern:
 `[network-traffic:extensions.'http-request-ext'.request_header.'X-Malicious-Header' = 'bad_value'] REPEATS 3 TIMES WITHIN 4 SECONDS` 
 
-The pattern is written in the STIX patterning language and it is stored in the threat knowledge base according to the STIX data model. In order to perform the matching the logs are first converted into the STIX data model, in particular into STIX Cyber Observables. The corresponding converted Suricata monitoring logs appear in the ``stix_traffic_cyber_observable.json`` file.
+The pattern is written in the STIX patterning language and it is stored in the threat knowledge base according to the STIX data model. In order to perform the matching the logs are first converted into the STIX data model, in particular into STIX Cyber Observables. The corresponding converted Suricata monitoring logs appear in the ``stix_traffic_cyber_observable.json`` file in the ``Logs`` folder.
