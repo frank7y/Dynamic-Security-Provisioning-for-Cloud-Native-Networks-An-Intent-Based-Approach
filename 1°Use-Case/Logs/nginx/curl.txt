@@ -7,7 +7,7 @@ OK/ #
 
 
 
-Curl to the right port 80.
+Curl to the wrong port 80.
 
 kubectl exec -it -n enf-ns nsc -- /bin/sh
 Defaulted container "alpine" out of: alpine, cmd-nsc, cmd-nsc-init (init)
