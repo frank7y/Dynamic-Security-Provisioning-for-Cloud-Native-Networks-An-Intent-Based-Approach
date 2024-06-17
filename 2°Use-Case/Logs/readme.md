@@ -16,4 +16,4 @@ The ``iptables-routing-rules`` file within the ``suricata``folder represents the
 
 ## Squid
 Within the ``Squid`` folder we reported the request that we have used to trigger the Squid response, performed by the client, and its relative response, within ``squid.txt`` file.
-
+The ``iptables-routing-rules`` file within the ``Squid``folder represents the rules used to perform the routing within the SF in the chain,for the specific pod, during the realignment workflow.

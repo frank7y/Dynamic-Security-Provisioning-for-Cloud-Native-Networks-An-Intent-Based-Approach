@@ -50,7 +50,7 @@ Defaulted container "nse" out of: nse, cmd-nsc, suricata
        valid_lft forever preferred_lft forever
 4: suricataint: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc mq state UNKNOWN qlen 1000
     link/ether 02:fe:c6:6c:6b:32 brd ff:ff:ff:ff:ff:ff
-    inet 172.16.2.1/32 scope global suricataint
+    inet 172.16.1.101/32 scope global suricataint
        valid_lft forever preferred_lft forever
     inet6 fe80::fe:c6ff:fe6c:6b32/64 scope link 
        valid_lft forever preferred_lft forever
@@ -72,7 +72,7 @@ Defaulted container "nse" out of: nse, nginx
        valid_lft forever preferred_lft forever
 3: webserver--33ae: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc mq state UNKNOWN qlen 1000
     link/ether 02:fe:56:28:2c:30 brd ff:ff:ff:ff:ff:ff
-    inet 172.16.2.0/32 scope global webserver--33ae
+    inet 172.16.1.100/32 scope global webserver--33ae
        valid_lft forever preferred_lft forever
     inet6 fe80::fe:56ff:fe28:2c30/64 scope link 
        valid_lft forever preferred_lft forever

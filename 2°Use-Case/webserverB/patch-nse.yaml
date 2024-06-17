@@ -10,7 +10,7 @@ spec:
         - name: nse
           env:
             - name: NSM_CIDR_PREFIX
-              value: 172.16.2.0/31
+              value: 172.16.1.100/31
             - name: NSM_SERVICE_NAMES
               value: "webserver-b"
             - name: NSM_REGISTER_SERVICE
